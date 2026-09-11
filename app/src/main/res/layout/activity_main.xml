@@ -1,27 +1,24 @@
-package com.example.helloworld;
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="24dp">
 
-import androidx.appcompat.app.AppCompatActivity;
-import android.content.Intent;
-import android.net.Uri;
-import android.os.Bundle;
-import android.widget.Button;
-import android.widget.TextView;
+    <TextView
+        android:id="@+id/hello_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="media remote"
+        android:textSize="24sp"
+        android:textStyle="bold" />
 
-public class MainActivity extends AppCompatActivity {
+    <Button
+        android:id="@+id/simpsons_link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="The Simpsons on Disney+" />
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-
-        TextView helloText = findViewById(R.id.hello_text);
-        helloText.setText("media remote");
-
-        Button simpsonsLink = findViewById(R.id.simpsons_link);
-        simpsonsLink.setOnClickListener(v -> {
-            Intent intent = new Intent(Intent.ACTION_VIEW,
-                    Uri.parse("https://www.disneyplus.com/series/the-simpsons"));
-            startActivity(intent);
-        });
-    }
-}
+</LinearLayout>
