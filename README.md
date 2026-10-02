@@ -12,7 +12,7 @@ A minimal Android "Hello World" starter. Every push to `main` builds a debug APK
    - `app/src/main/res/drawable/ic_launcher.png` — the launcher icon (192×192 PNG)
    - `app/build.gradle` — `applicationId`, `versionCode`, `versionName`
 3. **Push to `main`** — the Build APK workflow compiles it automatically.
-4. **Get the APK** — open the Actions tab → latest run → Artifacts → download, then install it on your phone.
+4. **Get the APK** — open the Actions tab → latest successful run → Artifacts → download `hello-world-apk` (a zip containing `app-debug.apk`), then install it on your phone.
 
 ## Notes
 
