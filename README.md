@@ -1,8 +1,20 @@
-# Hello World Android App
+# App — Hello World Android Template
 
-Current Version: 0.1.0
-[hello-world-apk.zip](https://github.com/user-attachments/files/31868543/hello-world-apk.zip)
+A minimal Android "Hello World" starter. Every push to `main` builds a debug APK with GitHub Actions — no Android Studio needed.
 
-A simple Android Hello World application.
+## How to use
 
-Built from Android phone using ChatGPT and Github Copilot
+1. **Start from this template** — fork it or copy it as the base for a new app.
+2. **Make it yours:**
+   - `app/src/main/res/layout/activity_main.xml` — the screen layout
+   - `app/src/main/java/com/example/helloworld/MainActivity.java` — the code
+   - `app/src/main/res/values/strings.xml` — the app name (`app_name`)
+   - `app/src/main/res/drawable/ic_launcher.png` — the launcher icon (192×192 PNG)
+   - `app/build.gradle` — `applicationId`, `versionCode`, `versionName`
+3. **Push to `main`** — the Build APK workflow compiles it automatically.
+4. **Get the APK** — open the Actions tab → latest run → Artifacts → download, then install it on your phone.
+
+## Notes
+
+- Bump `versionCode` in `app/build.gradle` with each release so Android treats it as an update.
+- Debug builds are signed with the build machine's debug key.
